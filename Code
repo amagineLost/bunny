@@ -1,0 +1,52 @@
+local player = game.Players.LocalPlayer
+
+local character = player.Character
+
+local humanoid = character:WaitForChild("Humanoid")
+
+local chat = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+
+chat.OnClientEvent:Connect(function(player, message, channel)
+
+  if message == "awww" and player.Name == "zoark215" then
+
+    wait(3)
+
+    chat:FireServer("my life is now better, you fixed my past and will be my future", "All")
+
+  end
+
+  if message == "😍" and player.Name == "zoark215" then
+
+    wait(3)
+
+    chat:FireServer("I know we haven't been together long but I think I want to spend my life with you", "All")
+
+  end
+
+  if message == "starts freaking out" and player.Name == "zoark215" then
+
+    wait(3)
+
+    chat:FireServer("I know this is a Roblox game, but you are beautiful and kind and just perfect and I..", "All")
+
+  end
+
+  if message == "are you saying what I think you are going to say" and player.Name == "zoark215" then
+
+    wait(3)
+
+    chat:FireServer("Kenzie will you marry me and be mine forever 💐", "All")
+
+  end
+
+  if message == "yes of course I will, I want to be with you forever and ever" and player.Name == "zoark215" then
+
+    wait(3)
+
+    chat:FireServer("Puts ring on finger ..mwa.. Ly ..and you will always belong to me", "All")
+
+  end
+
+end)
+
